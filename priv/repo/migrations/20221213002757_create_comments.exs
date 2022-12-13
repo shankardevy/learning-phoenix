@@ -4,7 +4,7 @@ defmodule Hello.Repo.Migrations.CreateComments do
   def change do
     create table(:comments) do
       add :comment, :string
-      add :post_id, references(:posts, on_delete: :nothing)
+      add :post_id, references(:posts, on_delete: :restrict)
 
       timestamps()
     end

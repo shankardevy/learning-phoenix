@@ -11,6 +11,10 @@
 # and so on) as they will fail if something goes wrong.
  
     Hello.Repo.insert(%Hello.Blog.Post{
+       id: 1,
+       name: "food"
+    })
+    Hello.Repo.insert(%Hello.Blog.Post{
        id: 2,
        name: "education"
     })
